@@ -10,8 +10,11 @@
 </head>
 <body>
     <div id="app">
-        <p v-if = "email.length == 10">{{email}}</p>
+        <ul v-if = "email.length == 10">
+            <li v-for="messaggio in email">{{messaggio}}</li>
+        </ul>
     </div>
     <script src="js/script.js"></script>
 </body>
 </html>
+        
